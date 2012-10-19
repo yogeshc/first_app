@@ -7,10 +7,19 @@ gem 'rails', '3.2.8'
 
 #gem 'sqlite3'i
 #gem 'sqlite3'
-group :development do
-  gem 'taps'
-  gem 'rvm'
-end
+#group :development do
+#  gem 'taps'
+#  gem 'rvm'
+#end
+
+group :production do
+  gem 'pg'
+  end        
+
+  group :development, :test do
+    gem 'sqlite3'
+    end
+
 
 
 
